@@ -4,10 +4,11 @@ import Navbar from '../components/Navbar'
 import Temperature from '../components/Temperature'
 import Humidity from '../components/Humidity'
 import WindSpeed from '../components/WindSpeed'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div className='m-10'>
+    <div className='m-8'>
           <Navbar />
           <hr className='mt-4 border-none h-[1px] bg-gray-500'/>
           <div className='mt-5 p-3 flex justify-between '>
@@ -27,6 +28,8 @@ const Home = () => {
                   <Forecast/>
               </div>
           </div>
+          <hr className='mt-4 border-none h-[1px] bg-gray-500' />
+          <Footer/>
     </div>
   )
 }
